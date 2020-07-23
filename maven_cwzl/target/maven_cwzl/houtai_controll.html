@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>私人菜务助理后台管理系统</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>私人菜务助理网络平台</title>
+		<link rel="stylesheet" href="./layui/css/layui.css">
+		<script src="./layui/layui.js"></script>
+		
+	</head>
+	<body class="layui-layout-body">
+	<div class="layui-layout layui-layout-admin">
+	  <div class="layui-header">
+	    <div class="layui-logo">私人菜务助理后台</div>
+	    <!-- 头部区域（可配合layui已有的水平导航） -->
+	    <ul class="layui-nav layui-layout-left">
+	      <li class="layui-nav-item layui-this"><a href="houtai_controll.html">控制台</a></li>
+	      <li class="layui-nav-item "><a href="houtai_user.html">用户管理</a></li>
+			<li class="layui-nav-item"><a href="houtai_sj.html">商家管理</a></li>
+			<li class="layui-nav-item"><a href="houtai_sp.html">商品管理</a></li>
+			<li class="layui-nav-item"><a href="houtai_order.html">订单管理</a></li>
+	      <li class="layui-nav-item">
+	        <a href="javascript:;">其它管理</a>
+	        <dl class="layui-nav-child">
+	          <dd><a href="">邮件管理</a></dd>
+	          <dd><a href="">消息管理</a></dd>
+	          <dd><a href="">授权管理</a></dd>
+	        </dl>
+	      </li>
+	    </ul>
+	    <ul class="layui-nav layui-layout-right">
+	      <li class="layui-nav-item">
+	        <a href="javascript:;">
+	          <img src="./images/tx.png" class="layui-nav-img">
+	          admine
+	        </a>
+	        <dl class="layui-nav-child">
+	          <dd><a href="">基本资料</a></dd>
+	          <dd><a href="">安全设置</a></dd>
+	        </dl>
+	      </li>
+	      <li class="layui-nav-item"><a href="">退了</a></li>
+	    </ul>
+	  </div>
+	  
+	  <div class="layui-side layui-bg-black">
+	    <div class="layui-side-scroll">
+	      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+	      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">所有商品</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">列表一</a></dd>
+	            <dd><a href="javascript:;">列表二</a></dd>
+	            <dd><a href="javascript:;">列表三</a></dd>
+	            <dd><a href="">超链接</a></dd>
+	          </dl>
+	        </li>
+	        <li class="layui-nav-item">
+	          <a href="javascript:;">解决方案</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">列表一</a></dd>
+	            <dd><a href="javascript:;">列表二</a></dd>
+	            <dd><a href="">超链接</a></dd>
+	          </dl>
+	        </li>
+	        <li class="layui-nav-item"><a href="">云市场</a></li>
+	        <li class="layui-nav-item"><a href="">发布商品</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	  
+	  <div class="layui-body">
+	    <!-- 内容主体区域 -->
+	    <div id="header">
+			<div id="header_first">
+				<h1 style="text-align: center"><font size="" color="#000000">私人菜务助理网络后台系统</font></h1>
+			</div>
+			<hr class="layui-bg-gray">
+		</div>
+<!--		  开发事件描述-->
+		  <div style="text-align:center">
+		  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+			  <legend>开发时间线</legend>
+		  </fieldset>
+		  <ul class="layui-timeline">
+			  <li class="layui-timeline-item">
+
+				  <div class="layui-timeline-content layui-text">
+					  <h3 class="layui-timeline-title">8月18日</h3>
+					  <p>
+						  layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+						  <br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+						  <br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+					  </p>
+				  </div>
+			  </li>
+			  <li class="layui-timeline-item">
+				  <div class="layui-timeline-content layui-text">
+					  <h3 class="layui-timeline-title">8月16日</h3>
+					  <p>杜甫的思想核心是儒家的仁政思想，他有<em>“致君尧舜上，再使风俗淳”</em>的宏伟抱负。个人最爱的名篇有：</p>
+					  <ul>
+						  《登高》 《茅屋为秋风所破歌》
+					  </ul>
+				  </div>
+			  </li>
+			  <li class="layui-timeline-item">
+				  <div class="layui-timeline-content layui-text">
+					  <h3 class="layui-timeline-title">8月15日</h3>
+					  <p>
+						  中国人民抗日战争胜利日
+						  <br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+						  <br>铭记、感恩
+						  <br>所有为中华民族浴血奋战的英雄将士
+						  <br>永垂不朽
+					  </p>
+				  </div>
+			  </li>
+			  <li class="layui-timeline-item">
+				  <div class="layui-timeline-content layui-text">
+					  <div class="layui-timeline-title">过去</div>
+				  </div>
+			  </li>
+		  </ul>
+		  </div>
+	  </div>
+	  
+	  <div class="layui-footer">
+	    <!-- 底部固定区域 -->
+	    © layui.com - 底部固定区域
+	  </div>
+	</div>
+	
+		
+	<script>
+	//JavaScript代码区域
+	layui.use('element', function(){
+	  var element = layui.element;
+	  
+	});
+	</script>
+	</body>
+</html>

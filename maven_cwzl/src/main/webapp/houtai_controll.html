@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>私人菜务助理后台管理系统</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>私人菜务助理网络平台</title>
+		<link rel="stylesheet" href="./layui/css/layui.css">
+		<script src="./layui/layui.js"></script>
+		
+	</head>
+	<body class="layui-layout-body">
+	<div class="layui-layout layui-layout-admin">
+	  <div class="layui-header">
+	    <div class="layui-logo">私人菜务助理后台</div>
+	    <!-- 头部区域（可配合layui已有的水平导航） -->
+	    <ul class="layui-nav layui-layout-left">
+	      <li class="layui-nav-item layui-this"><a href="houtai_controll.html">控制台</a></li>
+	      <li class="layui-nav-item "><a href="houtai_user.html">用户管理</a></li>
+			<li class="layui-nav-item"><a href="houtai_sj.html">商家管理</a></li>
+			<li class="layui-nav-item"><a href="houtai_sp.html">商品管理</a></li>
+			<li class="layui-nav-item"><a href="houtai_order.html">订单管理</a></li>
+	      <li class="layui-nav-item">
+	        <a href="javascript:;">其它管理</a>
+	        <dl class="layui-nav-child">
+	          <dd><a href="">邮件管理</a></dd>
+	          <dd><a href="">消息管理</a></dd>
+	          <dd><a href="">授权管理</a></dd>
+	        </dl>
+	      </li>
+	    </ul>
+	    <ul class="layui-nav layui-layout-right">
+	      <li class="layui-nav-item">
+	        <a href="javascript:;">
+	          <img src="./images/tx.png" class="layui-nav-img">
+	          admine
+	        </a>
+	        <dl class="layui-nav-child">
+	          <dd><a href="">基本资料</a></dd>
+	          <dd><a href="">安全设置</a></dd>
+	        </dl>
+	      </li>
+	      <li class="layui-nav-item"><a href="">退了</a></li>
+	    </ul>
+	  </div>
+	  
+	  <div class="layui-side layui-bg-black">
+	    <div class="layui-side-scroll">
+	      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+	      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+	        <li class="layui-nav-item layui-nav-itemed">
+	          <a class="" href="javascript:;">所有商品</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">列表一</a></dd>
+	            <dd><a href="javascript:;">列表二</a></dd>
+	            <dd><a href="javascript:;">列表三</a></dd>
+	            <dd><a href="">超链接</a></dd>
+	          </dl>
+	        </li>
+	        <li class="layui-nav-item">
+	          <a href="javascript:;">解决方案</a>
+	          <dl class="layui-nav-child">
+	            <dd><a href="javascript:;">列表一</a></dd>
+	            <dd><a href="javascript:;">列表二</a></dd>
+	            <dd><a href="">超链接</a></dd>
+	          </dl>
+	        </li>
+	        <li class="layui-nav-item"><a href="">云市场</a></li>
+	        <li class="layui-nav-item"><a href="">发布商品</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	  
+	  <div class="layui-body">
+	    <!-- 内容主体区域 -->
+	    <div id="header">
+			<div id="header_first">
+				<h1 style="text-align: center"><font size="" color="#000000">私人菜务助理网络后台系统</font></h1>
+			</div>
+			<hr class="layui-bg-gray">
+		</div>
+<!--		  开发事件描述-->
+		  <div style="text-align:center">
+		  <ul class="layui-timeline">
+			  <li class="layui-timeline-item">
+
+				  <div class="layui-timeline-content layui-text">
+					  <h3 class="layui-timeline-title">10月29日</h3>
+					  <p>
+						  与老师见面，聊毕业论事项，并确定毕业论文题目
+						  <br>私人菜务助理网站平台项目确定。
+						  <br>开始启动论文网站建立知识 <i class="layui-icon"></i>
+					  </p>
+				  </div>
+			  </li>
+			  <li class="layui-timeline-item">
+				  <div class="layui-timeline-content layui-text">
+					  <h3 class="layui-timeline-title">12月1日</h3>
+					  <p>从图书馆借来Javaweb编程宝典以及jspweb开发学习实录和Java从入门到精通三书：</p>
+					  <br>先看jspweb
+					  <br>再看java
+					  <br>然后看javaweb
+					  <br>最后再网上学习一个实战篇
+				  </div>
+			  </li>
+			  <li class="layui-timeline-item">
+				  <div class="layui-timeline-content layui-text">
+					  <h3 class="layui-timeline-title">2月20日</h3>
+					  <p>
+						  开发出私人菜务助理网站框架
+						  <br>完善网站
+						  <br>添加功能
+						  <br>修改bug
+						  <br>优化体验
+					  </p>
+				  </div>
+			  </li>
+			  <li class="layui-timeline-item">
+				  <div class="layui-timeline-content layui-text">
+					  <div class="layui-timeline-title">现在</div>
+				  </div>
+			  </li>
+		  </ul>
+		  </div>
+	  </div>
+	  
+	  <div class="layui-footer">
+	    <!-- 底部固定区域 -->
+	    © layui.com - 底部固定区域
+	  </div>
+	</div>
+	
+		
+	<script>
+	//JavaScript代码区域
+	layui.use('element', function(){
+	  var element = layui.element;
+	  
+	});
+	</script>
+	</body>
+</html>

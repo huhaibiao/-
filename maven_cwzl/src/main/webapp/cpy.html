@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	  <title>私人菜务助理网络平台</title>
+	  <link rel="stylesheet" href="layui/css/layui.css">
+	  <script src="./layui/layui.js"></script>
+	  <script type="text/javascript">
+	  	layui.use(["element","laypage","layer"],function(){
+			var laypage = layui.laypage,
+			layer = layui.layer;
+			  laypage.render({
+			    elem: 'demo2-1'
+			    ,count: 100
+			    ,theme: '#FF5722'
+			  });
+			  
+	  	});
+	  </script>
+	  <link rel="stylesheet" type="text/css" href="index.css"/>
+	  <!-- boostrap的框架 -->
+	  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+	  <script src="bootstrap/js/bootstrap.min.js"></script>
+	  <script src="bootstrap/js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="bootstrap/js/include.js" type="text/javascript" charset="utf-8"></script>
+	  
+	  <style type="text/css">
+	  	#cpy{
+			background-color: red;
+		}
+		#boder{
+			border: 0.5px red solid;
+			width: 100%;
+			height: 204px;
+		}
+		#jiesao{
+			float: right;
+			width: 208px;
+			margin-left: 10px;
+			height: 202px;
+			
+		}
+		#annu{
+			text-align: center;
+		}
+		#xiangxi{
+			background-color: #f8f8f8;
+			height: 35%;
+		}
+	  </style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header"></div>
+			
+			<div id="center">
+				<div id="banner">
+					<br>
+					<h4>分类栏</h4>
+					<span class="layui-breadcrumb" lay-separator="|">
+					  <a href="#"><font size="3px" color="#ff0000">推荐</font></a>
+					  <a href="#"><font size="3px" color="#7d7d7d">热门</font></a>
+					  <a href="#"><font size="3px" color="#7d7d7d">早餐</font></a>
+					  <a href="#"><font size="3px" color="#7d7d7d">午餐</font></a>
+					  <a href="#"><font size="3px" color="#7d7d7d">晚餐</font></a>
+					</span>
+				</div><br>
+				
+				<div class="layui-row layui-col-space10">
+				    <div class="layui-col-md4">
+					<div id="boder">
+						<div id="img" style="width: 150px;float: left;">
+							<img width="150px" src="images/p031.jpg" >
+						</div>
+						<div id="jiesao" style=" ">
+							<div id="jiesao" style=" ">
+								<h3>成品名称</h3>
+								<div id="xiangxi">
+									<p>成品详细介绍成品详细介绍成品详细介绍</p>
+								</div>
+
+								<p>价格</p>
+								<div id="annu">
+									<button type="button" class="layui-btn layui-btn-danger">一键下单</button>
+									<button type="button" class="layui-btn layui-btn-warm">收藏</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="layui-col-md4">
+						<div id="boder">
+							<div id="img" style="width: 150px;float: left;">
+								<img width="150px" src="images/p021.jpg" >
+							</div>
+							<div id="jiesao" style=" ">
+								<h3>成品名称</h3>
+								<div id="xiangxi">
+									<p>成品详细介绍</p>
+								</div>
+
+								<p>价格</p>
+								<div id="annu">
+									<button type="button" class="layui-btn layui-btn-danger">一键下单</button>
+									<button type="button" class="layui-btn layui-btn-warm">收藏</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-md4">
+						<div id="boder">
+							<div id="img" style="width: 150px;float: left;">
+								<img width="150px" src="images/p01.jpg" >
+							</div>
+							<div id="jiesao" style=" ">
+								<h3>成品名称</h3>
+								<div id="xiangxi">
+									<p>成品详细介绍</p>
+								</div>
+								<p>价格</p>
+								<div id="annu">
+									<button type="button" class="layui-btn layui-btn-danger">一键下单</button>
+									<button type="button" class="layui-btn layui-btn-warm">收藏</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				  </div>
+					
+					
+					
+					
+					
+					<div id="demo2-1" style="text-align: center;"></div>
+				</div>
+					
+			
+			</div>
+			
+		
+			<div id="footer">
+			
+		</div>
+	</body>
+</html>
+

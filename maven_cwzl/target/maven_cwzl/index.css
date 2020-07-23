@@ -1,0 +1,13 @@
+#container{
+			padding:1px;
+			margin-left: 50px;
+			margin-right: 50px;
+			margin-top: 10px;
+			
+		}
+*{
+	box-sizing: border-box;
+	}
+footer{
+	bottom:0;
+	}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>私人菜务助理网络平台管理员登录</title>
+		<link rel="stylesheet" href="layui/css/layui.css">
+		<script src="layui/layui.js"></script>
+		<script src="bootstrap/js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/include.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">//异步提交表单
+		$(function(){
+			$("#layui-btn").click(function(){
+				//发送数据到服务器
+				$.post("admineLoginServlet",$("#layui-form").serialize(),function(data){
+					if (data.flag){
+						//登录成功
+						// $("#msg").html(data.msg);
+						alert(data);
+						location.href="houtai_controll.html";
+					}else {
+						alert(data.msg);
+					}
+				});
+				//跳转页面
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div id="container" style="margin-top: 20px;">
+		
+		<div id="header_first">
+			<h1 style="text-align: center"><font size="" color="red">私人菜务助理网络平台</font></h1>
+		</div>
+		<hr class="layui-bg-gray">
+		
+		
+		<div id="" style="width: 400px;margin-left: 450px;margin-top: 50px;">
+			<h1 align="center">管理员登录</h1>
+		<div id="errormsg" style="text-align: center;margin-bottom: 10px;color: #FF5722;" >
+				用户名或密码错误
+		</div>
+		<form id="layui-form" class="layui-form" action="" method="post">
+		  <div class="layui-form-item" >
+		    <label class="layui-form-label">登录名</label>
+		    <div class="layui-input-inline">
+		      <input type="text" name="username" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入管理员登录名" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">密码</label>
+		    <div class="layui-input-inline">
+		      <input type="password" name="password" lay-verify="pass" placeholder="请填写6到12位密码" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+		  
+		  <!-- 验证码行 -->
+
+			<div class="layui-form-item">
+				<label class="layui-form-label">验证码</label>
+				<div class="layui-input-inline">
+					<input name="checkCode" type="text" placeholder="请输入验证码" autocomplete="off" class="layui-input" style="width: 100px;float: left">
+					<span style="float: right"> <img src="checkCode" width="80px"height="38px" alt="" onclick="changeCheckCode(this)">
+					</span><script type="text/javascript">
+					//图片点击事件
+					function changeCheckCode(img) {
+						img.src="checkCode?"+new Date().getTime();
+					}
+				</script>
+				</div>
+			</div>
+		  
+		  <div class="layui-form-item">
+		    <div class="layui-input-block">
+		      <button type="reset" class="layui-btn layui-btn-primary layui-bg-gray">重置</button>
+			  <button type="submit" id="layui-btn" class="layui-btn" lay-submit="" lay-filter="demo1">登录</button>
+		      
+		    </div>
+		  </div>
+		</form>
+		</div>
+		</div>
+	</body>
+</html>
